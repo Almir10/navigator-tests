@@ -13,7 +13,7 @@ Da bismo olakšali navigaciju kroz test caseove, ovdje su izdvojeni brojevi test
 - **TC_001:** Provjera da li se mapa uspješno učitava prilikom otvaranja aplikacije
 - **TC_002:** Provjera da li je mapa vidljiva na mobilnim uređajima
 - **TC_004:** Provjera da li search bar radi sa validnim unosom
-- **TC_005:** Provjera kako tražilica obrađuje validne unose
+- **TC_005:** Provjera kako search bar obrađuje validne unose
 - **TC_008:** Provjera da li klik na "Kreiraj Objekat" otvara formu
 - **TC_009:** Provjera da li se forma uspješno šalje sa validnim podacima
 - **TC_011:** Provjera da li klik na "Predloži Ideju" otvara formu za slanje povratne informacije
@@ -21,13 +21,14 @@ Da bismo olakšali navigaciju kroz test caseove, ovdje su izdvojeni brojevi test
 
 ### **Negativni Testovi**
 - **TC_003:** Provjera ponašanja aplikacije kada mapa ne može da se učita (npr. problem s mrežom)
-- **TC_006:** Provjera kako tražilica obrađuje nevalidne unose
+- **TC_006:** Provjera kako search bar obrađuje nevalidne unose
 - **TC_010:** Provjera da li aplikacija sprječava slanje forme sa nevalidnim podacima
 - **TC_013:** Provjera da li aplikacija sprječava slanje nevalidne povratne informacije (npr. prazno polje)
-- **TC_018:** Provjera ponašanja kada neprijavljeni korisnik pokušava dodati komentar
-- **TC_017:** Provjera ponašanja kada se pojavi greška prilikom lajkanja objekta
-- **TC_026:** Provjera da li aplikacija sprječava slanje izmjena sa nevalidnim podacima
-- **TC_032:** Provjera ponašanja aplikacije na SQL injection napade
+- **TC_017:** Provjera ponašanja kada neprijavljeni korisnik pokušava dodati komentar
+- **TC_020:** Provjera ponašanja kada se pojavi greška prilikom lajkanja objekta
+- **TC_029:** Provjera ponašanja za nepostojeći URL ili kategoriju
+- **TC_030:** Provjera ponašanja aplikacije kada API ne odgovara
+- **TC_031:** Provjera ponašanja aplikacije na SQL injection napade
 
 ---
 
@@ -42,8 +43,8 @@ Da bismo olakšali navigaciju kroz test caseove, ovdje su izdvojeni brojevi test
 
 ## 2. Search bar
 - **TC_004:** Provjera da li search bar radi sa validnim unosom
-- **TC_005:** Provjera kako tražilica obrađuje validne unose
-- **TC_006:** Provjera kako tražilica obrađuje nevalidne unose
+- **TC_005:** Provjera kako search bar obrađuje validne unose
+- **TC_006:** Provjera kako search bar obrađuje nevalidne unose
 - **TC_007:** Provjera da li selekcija kategorije ažurira mapu sa odgovarajućim lokacijama
 
 ## 3. Kreiraj Objekat (Create Object)
@@ -137,8 +138,8 @@ Da bismo olakšali navigaciju kroz test caseove, ovdje su izdvojeni brojevi test
 
 ### TC_004: Provjera da li search bar radi sa validnim unosom
 - **ID:** TC_004
-- **Test Scenario:** Funkcionalnost tražilice
-- **Testni Slučaj:** Provjeriti da li tražilica omogućava pretragu sa validnim unosom.
+- **Test Scenario:** Funkcionalnost search bar
+- **Testni Slučaj:** Provjeriti da li search bar omogućava pretragu sa validnim unosom.
 - **Preduslov:** Aplikacija je učitana i search bar je vidljiv.
 - **Koraci:**
     1. Unesi validan pojam u tražilicu (npr. "Restoran").
@@ -151,9 +152,9 @@ Da bismo olakšali navigaciju kroz test caseove, ovdje su izdvojeni brojevi test
 
 ### TC_005: Provjera kako search bar obrađuje validne unose
 - **ID:** TC_005
-- **Test Scenario:** Obrada validnih unosa u tražilici
-- **Testni Slučaj:** Provjeriti da li tražilica ispravno obrađuje razne validne unose.
-- **Preduslov:** Aplikacija je učitana i tražilica je vidljiva.
+- **Test Scenario:** Obrada validnih unosa u search bar
+- **Testni Slučaj:** Provjeriti da li search bar ispravno obrađuje razne validne unose.
+- **Preduslov:** Aplikacija je učitana i search bar je vidljiva.
 - **Koraci:**
     1. Unesi validan pojam u tražilicu (npr. "Hotel Sarajevo").
     2. Klikni na dugme za pretragu ili pritisni Enter.
@@ -166,7 +167,7 @@ Da bismo olakšali navigaciju kroz test caseove, ovdje su izdvojeni brojevi test
 ### TC_006: Provjera kako search bar obrađuje invalidne unose
 - **ID:** TC_006
 - **Test Scenario:** Obrada nevalidnih unosa u search bar-u
-- **Testni Slučaj:** Provjeriti kako aplikacija reaguje na nevalidne unose u tražilici.
+- **Testni Slučaj:** Provjeriti kako aplikacija reaguje na nevalidne unose u search bar.
 - **Preduslov:** Aplikacija je učitana i search bar je vidljiv.
 - **Koraci:**
     1. Unesi nevalidan pojam u search bar (npr. "#@!").
@@ -180,7 +181,7 @@ Da bismo olakšali navigaciju kroz test caseove, ovdje su izdvojeni brojevi test
 ### TC_007: Provjera da li selekcija kategorije ažurira mapu sa odgovarajućim lokacijama
 - **ID:** TC_007
 - **Test Scenario:** Ažuriranje mape na osnovu selekcije kategorije
-- **Testni Slučaj:** Provjeriti da li izbor kategorije na tražilici ažurira prikaz na mapi.
+- **Testni Slučaj:** Provjeriti da li izbor kategorije na search bar ažurira prikaz na mapi.
 - **Preduslov:** Aplikacija je učitana i tražilica je vidljiva.
 - **Koraci:**
     1. Klikni na padajući meni za kategorije u tražilici.
